@@ -7,6 +7,11 @@ public class FollowGameObject : MonoBehaviour
     [SerializeField] private float smoothing = 0.125f;
     [SerializeField] private Vector3 offset;
 
+    private void Awake()
+    {
+        target = GameObject.FindWithTag("Player").transform;
+    }
+
     private void LateUpdate()
     {
         Vector3 desiredPosition = target.position + offset;

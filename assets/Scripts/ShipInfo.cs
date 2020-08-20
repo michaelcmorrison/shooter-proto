@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ShipInfo : MonoBehaviour
 {
+    public string ShipName => gameObject.name.Substring(0,  gameObject.name.Length - 7);
+
     private Sprite _shipImage;
     private Ship _ship;
     private PlayerMover _mover;
@@ -16,14 +18,14 @@ public class ShipInfo : MonoBehaviour
         _ship = GetComponent<Ship>();
         _mover = GetComponent<PlayerMover>();
         _blaster = GetComponent<Blaster>();
-        
+
         shipInfo = BuildShipInfo();
     }
 
     private Dictionary<string, string> BuildShipInfo()
     {
         var dictToReturn = new Dictionary<string, string>();
-        
+
         dictToReturn.Add("Ship", _ship.GetAttributes().description);
         dictToReturn.Add("Mover", _mover.GetAttributes().description);
         dictToReturn.Add("Blaster", _blaster.GetAttributes().description);
@@ -35,14 +37,14 @@ public class ShipInfo : MonoBehaviour
     {
         return _shipImage;
     }
-    
+
     public string GetShipInfo()
     {
         return $"Ship Description:{GetPartDescription("Ship")}\n" +
                $"Mover Description: {GetPartDescription("Mover")}\n" +
                $"Blaster Description: {GetPartDescription("Blaster")}";
     }
-    
+
     public string GetPartDescription(string part)
     {
         return shipInfo[part];
