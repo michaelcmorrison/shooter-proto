@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Kamakaze : MonoBehaviour
+public class MoveTowardsPlayer : MonoBehaviour
 {
     [SerializeField] private float speed;
 

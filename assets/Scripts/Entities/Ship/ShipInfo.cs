@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class ShipInfo : MonoBehaviour
 {
-    public string ShipName => gameObject.name.Substring(0,  gameObject.name.Length - 7);
-
     private Sprite _shipImage;
     private Ship _ship;
     private PlayerMover _mover;
@@ -45,7 +43,7 @@ public class ShipInfo : MonoBehaviour
                $"Blaster Description: {GetPartDescription("Blaster")}";
     }
 
-    public string GetPartDescription(string part)
+    private string GetPartDescription(string part)
     {
         return shipInfo[part];
     }

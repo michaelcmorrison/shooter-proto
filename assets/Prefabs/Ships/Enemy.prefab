@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5341051785067095877}
   - component: {fileID: -5688584911248264967}
   m_Layer: 10
-  m_Name: Enemy Ship
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15f51571a064ae9a9d373bb6e59a391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 50
   damage: 20
 --- !u!114 &5341051785067095877
 MonoBehaviour:
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d277393054c7733428f38c0f24cf037b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.5
+  speed: 10
 --- !u!114 &-5688584911248264967
 MonoBehaviour:
   m_ObjectHideFlags: 0
