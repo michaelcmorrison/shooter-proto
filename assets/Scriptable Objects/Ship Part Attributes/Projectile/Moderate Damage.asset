@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dd3163c32344403af290522f3c93666, type: 3}
-  m_Name: High Health Some Armor
+  m_Script: {fileID: 11500000, guid: e440e751236647c1b4ec775c4aade39b, type: 3}
+  m_Name: Moderate Damage
   m_EditorClassIdentifier: 
-  description: High health. Some armor.
-  maxHealth: 100
-  armor: 10
+  description: Moderate damage
+  projectileSpeed: 30
+  damage: 25

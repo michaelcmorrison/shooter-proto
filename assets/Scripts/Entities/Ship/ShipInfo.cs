@@ -38,9 +38,9 @@ public class ShipInfo : MonoBehaviour
 
     public string GetShipInfo()
     {
-        return $"Ship Description:{GetPartDescription("Ship")}\n" +
-               $"Mover Description: {GetPartDescription("Mover")}\n" +
-               $"Blaster Description: {GetPartDescription("Blaster")}";
+        return $"Ship Durability: {GetPartDescription("Ship")}\n" +
+               $"Speed: {GetPartDescription("Mover")}\n" +
+               $"Blaster: {GetPartDescription("Blaster")}";
     }
 
     private string GetPartDescription(string part)

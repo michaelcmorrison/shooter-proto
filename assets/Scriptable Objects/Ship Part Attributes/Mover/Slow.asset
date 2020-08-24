@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c118366289c54ea2bfb11817bdba47e3, type: 3}
-  m_Name: Quick Mover
+  m_Name: Slow
   m_EditorClassIdentifier: 
-  description: Quick.
+  description: Slow
   moveSpeed: 10

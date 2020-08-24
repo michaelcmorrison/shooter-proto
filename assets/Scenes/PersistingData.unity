@@ -210,6 +210,7 @@ MonoBehaviour:
   shipPrefabs:
   - {fileID: 1149208941928250542, guid: 6507588b8d47a014c9f20607e7e83075, type: 3}
   - {fileID: 3144614123199560319, guid: eed29ee803e544344b7e6db00e6dc72e, type: 3}
+  - {fileID: 1149208941928250542, guid: e85434fbaa67023498e0e716a7246685, type: 3}
 --- !u!4 &1595041142
 Transform:
   m_ObjectHideFlags: 0
